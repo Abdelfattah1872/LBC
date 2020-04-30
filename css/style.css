@@ -1,0 +1,516 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* upper nav */
+.upper-nav{
+    background-image: url(../images/architecture-structure-sky-window-glass-view-877703-pxhere.com.jpg);
+    background-attachment: fixed;
+    z-index: 4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.upper-nav .container{
+    z-index: 1;
+    text-transform: uppercase;
+    margin-top: 200px;
+    line-height: 2rem;
+}
+.upper-content{
+    background-color: rgba(2, 2, 2, 0.5);
+}
+.upper-nav .container p{
+    color: white;
+    z-index: 3;
+    font-size: 30px;
+    margin:10px;
+    animation-name:leftToright ;
+    animation-duration: 2s;
+}
+.upper-nav .container h1{
+    color:#999999;
+    margin: 10px;
+    font-weight: bold;
+    animation-name:leftToright ;
+    animation-duration: 3.5s;
+}
+.upper-nav .container span{
+    background-color: #333333;
+    color: #cccccc;
+    padding: 8px 10px;
+    margin: 10px;
+    animation-name:leftToright ;
+    animation-duration: 3s;
+    animation-name:leftToright ;
+    animation-duration: 4s;
+}
+.upper-nav .container p span{
+    color: #009999;
+    background: none;
+}
+.upper-nav .container button{
+    background: none;
+    padding: 10px;
+    border-radius: 50%;
+    border-color: #009999;
+    margin: auto 9%;
+    animation-name:leftToright ;
+    animation-duration: 2.9s;
+}
+.upper-nav .container button:hover{
+    background-color:rgba(2, 2, 2, 0.5);
+    transition: 1s;
+}
+.upper-nav .container button i{
+    color: #009999;
+    padding: 10px;
+    font-size: 30px;
+}
+/* animation */
+@keyframes leftToright {
+    0%{transform: translatex(-1200px);opacity:0;}
+    100%{transform: translatex(0px);opacity:1;}
+}
+/* nav- bar */
+nav li a{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.border{
+    border: none !important;
+}
+.active{
+    border-bottom: 4px solid black;
+}
+nav li:hover{
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+    transition: 0.5s;
+    border-bottom: 4px solid black;
+}
+/* what we offer */
+.what-offer h2{
+    color:#333333;
+    font-weight: bold;
+}
+.what-offer h2 span,i{
+    color: #009999;
+}
+.what-offer i{
+    margin: 0px 20px !important;
+}
+.card-deck .card{
+    border: none;
+    line-height: initial;
+}
+.card-deck .card button{
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.card-deck .card button:hover{
+    background-color: #009999;
+    transition: 0.5s;
+    color: white;
+}
+/* features */
+.amz-fet{
+    background-color: #333333;
+}
+.amz-fet h2{
+    color: white;
+}
+.amz-fet h2 span{
+    color: #009999;
+}
+.amz-fet p{
+    color: #999999;
+}
+.content{
+    overflow: hidden;
+}
+.content-one .card{
+    background-color: #333333;
+    color: white;
+}
+.content-one .card h5{
+    text-transform: uppercase;
+}
+.content-one .card p{
+    color: #999999;
+}
+.content-two{
+    animation-name: topTobottom;
+    animation-duration: 4s;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-right: 10px !important;
+    margin-left: 20px !important;
+}
+.content-two img{
+   height: 100%;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+.content-two img:hover{
+    transition: 0.9s all linear;
+    transform: scale(1.2,1.2);
+}
+@keyframes topTobottom {
+    0%{transform: translatey(-1200px);opacity:0;}
+    100%{transform: translatey(0px);opacity:1;}
+}
+/* top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    border-radius: 10% !important;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.5;
+  }
+  #myBtn i{
+      font-size: 30px;
+  }
+  #myBtn:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+/* more features */
+.mfet-content{
+    flex-wrap: wrap;
+}
+.mfet-content .card .card-body h5{
+    text-transform: uppercase;
+}
+.mfet-content .card:nth-child(1){
+    animation-name:  leftToright;
+    animation-duration: 2.5s;
+
+}
+.mfet-content .card:nth-child(3){
+    animation-name:  leftToright;
+    animation-duration: 3.5s;
+
+}
+.mfet-content .card:nth-child(5){
+    animation-name:  leftToright;
+    animation-duration: 4.5s;
+
+}
+.mfet-content .card:nth-child(2){
+    animation-name:  rightToleft;
+    animation-duration: 2.5s;
+
+}
+.mfet-content .card:nth-child(4){
+    animation-name:  rightToleft;
+    animation-duration: 3.5s;
+
+}
+.mfet-content .card:nth-child(6){
+    animation-name:  rightToleft;
+    animation-duration: 4.5s;
+
+}
+
+@keyframes rightToleft {
+    0%{transform: translatex(1200px);opacity:0;}
+    100%{transform: translatex(0px);opacity:1;}
+}
+/* poweful */
+.power-skils{
+    background-color: #333333;
+    color: #999999;
+    text-transform: uppercase;
+}
+.power-skils .text-offer{
+    color: white;
+}
+.power-skils .text-offer span{
+    color: #009999;
+}
+.samp-content{
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.element:nth-child(1){
+    animation-name: topTobottom;
+    animation-duration: 1.5s;
+}
+.element:nth-child(2){
+    animation-name: topTobottom;
+    animation-duration: 2s;
+}
+.element:nth-child(3){
+    animation-name: topTobottom;
+    animation-duration: 3s;
+}
+.element:nth-child(4){
+    animation-name: topTobottom;
+    animation-duration: 4s;
+}
+.element:nth-child(5){
+    animation-name: topTobottom;
+    animation-duration: 5s;
+}
+.element:nth-child(6){
+    animation-name: topTobottom;
+    animation-duration: 6s;
+}
+.samp-content .perc-one{
+    border-radius: 50%;
+    border-left: 5px solid #009999 ;
+    border-right: 5px solid white ;
+    border-top: 5px solid #009999 ;
+    border-bottom: 5px solid #009999 ;
+}
+.samp-content .perc-two{
+    border-radius: 50%;
+    border-left: 5px solid #009999 ;
+    border-right: 5px solid white ;
+    border-top: 5px solid white ;
+    border-bottom: 5px solid #009999 ;
+}
+.samp-content .perc-three{
+    border-radius: 50%;
+    border-left: 5px solid #009999 ;
+    border-right: 5px solid #009999 ;
+    border-top: 5px solid white ;
+    border-bottom: 5px solid #009999 ;
+}
+.samp-content .perc-four{
+    border-radius: 50%;
+    border-left: 5px solid #009999 ;
+    border-right: 5px solid #009999 ;
+    border-top: 5px solid #009999 ;
+    border-bottom: 5px solid white ;
+}
+.samp-content .perc-five{
+    border-radius: 50%;
+    border-left: 5px solid #009999 ;
+    border-right: 5px solid white  ;
+    border-top: 5px solid #009999 ;
+    border-bottom: 5px solid white ;
+}
+.samp-content .perc-six{
+    border-radius: 50%;
+    border-left: 5px solid #009999 ;
+    border-right: 5px solid #009999  ;
+    border-top: 5px solid #009999 ;
+    border-bottom: 5px solid #009999 ;
+}
+/* sample work */
+.samp-work .text-offer span{
+    color: #009999;
+}
+.cart-group{
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.cart-group .cart{
+    width: 25%;
+    height: 200px;
+    margin: auto;
+}
+.cart-group .cart img{
+    width: 100%;
+    height: 100%;
+}
+/* map */
+.map .container{
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.map .container .row{
+    justify-content: center;
+    align-items: center;
+}
+.map .container .row iframe{
+    box-sizing: border-box;
+    margin: 0px 16px !important;
+}
+
+/* footer */
+
+footer{
+    margin-top: 20px;
+    background-color: black !important;
+}
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #009999;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #009999;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #009999;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-links a{
+    font-size: 11px;
+}
+.footer-distributed .footer-links a:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #009999;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #009999;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #009999;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #009999;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #009999;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #009999;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #009999;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
